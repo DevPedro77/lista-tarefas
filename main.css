@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo, .headerForm, .adicionar-tarefa, .footerMain, .tabela-pequena {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.logo header,
+.headerForm h1,
+.adicionar-tarefa h3,
+.footerMain footer {
+    font-size: 25px;
+}
+
+.conteiner {
+    background-color: rgba(54, 54, 54, 0.6);
+    margin: 20px auto;
+    padding: 16px;
+    border-radius: 10px;
+    width: 480px;
+    max-width: 100%;
+}
+
+form {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+form label {
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+form .itemTxt {
+    display: block;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+form button {
+    display: block;
+    font-size: 14px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li {
+    background: #eee;
+    color: #f30808;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.linha-meio {
+    text-decoration: line-through;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+/* Adiciona estilos para o emoji 📍 */
+ul li .pendente {
+    margin-right: 5px;
+}
+
+/* Adiciona estilos para esconder o emoji 📍 quando o item é clicado */
+ul li.checked .pendente {
+    display: none;
+}
+
+/* Adiciona estilos para o emoji ✅ quando o item é clicado */
+ul li.checked::before {
+    content: '✅ ';
+    margin-right: 5px;
+}
+
+/* Adiciona classe hide para esconder o emoji 📍 inicialmente */
+.hide {
+    display: none;
+}
+
+.footerMain {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #fff;
+}
